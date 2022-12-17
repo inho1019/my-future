@@ -36,7 +36,7 @@
         #kim {
             font-size: 5px;
         }
-        @media (hover: none) {
+        @media (pointer:coarse) {
             h1 {
                 display:block;
                 font-size:40px;
@@ -54,6 +54,6 @@
                 padding-bottom: 15px;
             }
             #grpr img{
-                width: 200px;
+                width: 90%;
             }
         }
