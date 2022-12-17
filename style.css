@@ -14,7 +14,7 @@
             grid-template-columns: 1fr 3fr;
         }
         a {
-            color: coral;
+            color: green;
             text-decoration-line: none;
         }
         #olgr {
@@ -30,7 +30,7 @@
         #kim {
             font-size: 5px;
         }
-        @media (max-width:650px) {
+        @media (hover: none) {
             h1 {
                 display:block;
                 font-size:40px;
