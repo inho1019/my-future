@@ -1,6 +1,6 @@
   .background {
-    background-img: src"byungsin.jpg";
-    background-repeat: repeat:
+    background-img: url"byungsin.jpg";
+    background-repeat: repeat;
      }
         body {
             border: 1px dotted grey;
@@ -34,7 +34,7 @@
         #kim {
             font-size: 5px;
         }
-        @media (hover: none), (max-width:650px) {
+        @media (hover: none) {
             h1 {
                 display:block;
                 font-size:40px;
