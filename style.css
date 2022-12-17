@@ -1,4 +1,4 @@
-body {
+  body {
             border: 1px dotted grey;
             margin:5px;
         }
@@ -30,7 +30,7 @@ body {
         #kim {
             font-size: 5px;
         }
-        @media(max-width:660px) {
+        @media(max-width:660px), (hover: none) {
             h1 {
                 display:block;
                 font-size:40px;
