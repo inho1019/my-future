@@ -30,7 +30,7 @@
         #kim {
             font-size: 5px;
         }
-        @media (hover: none) {
+        @media screen and (hover: none) {
             h1 {
                 display:block;
                 font-size:40px;
