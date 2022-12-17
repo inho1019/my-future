@@ -1,10 +1,10 @@
-  .background {
-    background-img: url"byungsin.jpg";
-    background-repeat: repeat;
-     }
+  
         body {
             border: 1px dotted grey;
             margin:5px;
+            background-img: url"byungsin.jpg";
+
+    background-repeat: repeat;
         }
         h1 {
             border-bottom: 1px solid black;
