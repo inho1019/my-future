@@ -2,7 +2,7 @@
         body {
             border: 1px dotted grey;
             margin:5px;
-            background-img: url"byungsin.jpg";
+            background-image: url"byungsin.jpg";
 
     background-repeat: repeat;
         }
