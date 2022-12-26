@@ -1,0 +1,35 @@
+#main {
+    background-color: darkgreen;
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+#main h1{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 70px;
+}
+#main p{
+    font-size: 25px;
+}
+#sbut {
+    font-family: 'Gothic A1', sans-serif;
+    width: 40%;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    color: black;
+}
+#sbut:hover {
+    transition: 0.1s ease-out;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+#mim {
+    border-radius: 10%;
+}
+#main #tsm {
+    font-size: 15px;
+}
