@@ -18,6 +18,7 @@
 .kill {
     width: 80%;
     border: solid black 5px;
+    border-radius: 3px;
     color: whitesmoke;
     font-size: 20px;
     background-color: black
@@ -36,49 +37,43 @@
     text-align: center;
     font-size: 30px;
 }
+#angr {
+    background-color: darkgreen;
+    border: solid black 10px;
+    border-radius: 5px;
+}
 @media(min-width: 1100px){
 #qblo {
     width: 770px;
 }
 }
-#angr {
-    background-color: darkgreen;
-    border: solid black 10px;
-    height: 80%;
-}
 @media(min-width: 1100px){
 #angr {
     width: 650px;
-    height: 80%;
 }
 }
 @media(max-width: 1100px) and (min-width: 700px){
 #angr {
     width: 55%;
-    height: 80%;
 }
 }
 @media(max-width: 700px) and (min-width: 600px){
 #angr {
     width: 65%;
-    height: 80%;
 }
 }
 @media(max-width: 600px) and (min-width: 500px){
 #angr {
     width: 75%;
-    height: 80%;
 }
 }
 @media(max-width: 500px) and (min-width: 400px){
 #angr {
     width: 83%;
-    height: 80%;
 }
 }
 @media(max-width: 400px){
 #angr {
     width: 90%;
-    height: 80%;
 }
 }

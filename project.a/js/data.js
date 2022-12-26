@@ -1,15 +1,17 @@
-/*  ty = 
+/*  
+    ty = 
     1.노잼
     2.에이스
     3.싸이코
     4.꿀벌
-    5.폐급 
+    5.폐급
+    
     level =
     1.신병/이병
     2.일병
     3.상병
     4.병장
-    */
+        */
 const queanw = [
     //여자
     { dumq : [ 
@@ -61,26 +63,26 @@ const queanw = [
     {
         que : "군대에서 선임에게 장난같은 부조리를 당했다...", 
         rela : [ 
-            {anw : '마음의 편지를 쓴다', ty : [1,5], level : 'none'}, 
-            {anw : '그 선임과 친해지다', ty : [2,4], level : 'none'},
-            {anw : '참고 버틴다', ty : [1,3], level : 'none'},
-            {anw : '그 선임에게 부조리라고 얘기한다', ty : [3,5], level : 'none'}
+            {anw : '마음의 편지를 쓴다', ty : [0,4], level : 'none'}, 
+            {anw : '그 선임과 친해진다', ty : [1,3], level : 'none'},
+            {anw : '참고 버틴다', ty : [0,2], level : 'none'},
+            {anw : '그 선임에게 부조리라고 얘기한다', ty : [2,4], level : 'none'}
         ]},
     {
-        que : "군대에서 선임에게 장난같은 부조리를 당했다...", 
+        que : "군대의 야심한밤 잠이오지 않는다. 무슨 생각을 하는가?", 
         rela : [ 
-            {anw : '마음의 편지를 쓴다', ty : [1,5], level : 'none'}, 
-            {anw : '그 선임과 친해지다', ty : [2,4], level : 'none'},
-            {anw : '참고 버틴다', ty : [1,3], level : 'none'},
-            {anw : '그 선임에게 부조리라고 얘기한다', ty : [3,5], level : 'none'}
+            {anw : '훈련하는 상상을 한다', ty : [1,2], level : 'none'}, 
+            {anw : '나를 괴롭힌 선임에 대해 생각한다', ty : [2,4], level : 'none'},
+            {anw : '야한 생각을 한다', ty : [0,4], level : 'none'},
+            {anw : '사회에 대한 생각을 한다', ty : [0,3], level : 'none'}
         ]},
     {
-        que : "군대에서 선임에게 장난같은 부조리를 당했다...", 
+        que : "아침에 기상 나팔이 울렸다. 어떻게 행동할 것인가?", 
         rela : [ 
-            {anw : '마음의 편지를 쓴다', ty : [1,5], level : 'none'}, 
-            {anw : '그 선임과 친해지다', ty : [2,4], level : 'none'},
-            {anw : '참고 버틴다', ty : [1,3], level : 'none'},
-            {anw : '그 선임에게 부조리라고 얘기한다', ty : [3,5], level : 'none'}
+            {anw : '졸린데 더 잔다', ty : 'none', level : [3]}, 
+            {anw : '일어나서 환복한다', ty : 'none', level : [1]},
+            {anw : '준비후 자고 있는 인원들을 깨운다', ty : 'none', level : [0]},
+            {anw : '그냥 누워있는다', ty : 'none', level : [2]}
         ]},
     {
         que : "군대에서 선임에게 장난같은 부조리를 당했다...", 
