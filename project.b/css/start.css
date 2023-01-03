@@ -1,0 +1,15 @@
+.sbut {
+    display: block;
+    width: 20%;
+    background-color: lightgray;
+    padding-bottom: 20%;
+    border-radius: 50%;
+    animation: bgsm 10s infinite;
+    margin-bottom: -5%;
+    border: 0px;
+}
+.start {
+    margin-top: 20%;
+    position: relative;
+    z-index: 1;
+}
