@@ -1,8 +1,5 @@
 * {
     font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
     color: lightgray;
 }
 body {
@@ -12,12 +9,13 @@ h1 {
     font-size: 60px;
     text-align: center;
     animation-fill-mode: forwards;
-    animation: fadein 5s, swing 10s infinite;
+    animation: fadein 5s, swingt 15s infinite;
     }
 .boat {
+    position: relative;
     display: block;
     margin-bottom: -42.5%;
-    animation: swing 10s infinite;
+    animation: swing 8s infinite;
 }
 @font-face {
     font-family: 'GangwonEdu_OTFBoldA';

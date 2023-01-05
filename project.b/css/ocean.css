@@ -52,10 +52,26 @@
     display: block;
     width: 100%;
     background-color: lightgray;
-    padding-bottom: 200%;
+    padding-bottom: 130%;
 }
 #allocean {
     position: relative;
-    transition: 1.5s ease-out;
+    transition: 1s ease-out;
     z-index: -1;
+}
+@media(max-width: 400px) {
+    #allocean {
+        top: 100px;
+    }
+    .boat {
+        top: 100px;
+    }
+}
+@media(max-width: 500px) {
+    #allocean {
+        top: 50px;
+    }
+    .boat {
+        top: 50px;
+    }
 }
