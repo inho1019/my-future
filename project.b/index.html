@@ -16,11 +16,14 @@
     <link rel="stylesheet" href="css/ocean.css">
     <link rel="stylesheet" href="css/anime.css">
     <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/star.css">
 </head>
 <body>
-   <h1 class="mt-4">잠의 바다</h1>
+    <span class="star"></span>
+    <h1 class="mt-4">잠의 바다</h1>
     <section class="start">
-        <button class="sbut mx-auto my-5" type="button" onclick="js:start()"></button>
+        <p class="ststr mx-auto"></p>
+        <button class="sbut mx-auto" type="button" onclick="js:start();"></button>
     </section>
     <div><img class="boat col-5 mx-auto img-fluid" src="img/boat.png" alt="boat"></div>
     <section id="allocean">
@@ -28,5 +31,7 @@
     </section>
     
     <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/data.js" charset="utf-8"></script>
+    <script src="js/star.js" charset="utf-8"></script>
 </body>
 </html>
