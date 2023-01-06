@@ -4,9 +4,10 @@
 }
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     animation-fill-mode: forwards;
     animation: fadein 5s, swingt 15s infinite;
@@ -16,6 +17,7 @@ h1 {
     display: block;
     margin-bottom: -42.5%;
     animation: swing 8s infinite;
+    transition: 2s ease-out;
 }
 @font-face {
     font-family: 'GangwonEdu_OTFBoldA';
