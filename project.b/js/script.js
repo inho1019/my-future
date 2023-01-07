@@ -5,11 +5,14 @@ const ocsec = document.querySelector(".allocean");
 const whale = document.querySelector(".whale")
 const boat = document.querySelector(".boat")
 const topsec = document.querySelector(".topsec")
+const hgage = document.querySelector(".hgage")
 
 let stt = 0;
 let twn = 0;
 let tht = 0;
 let frt = 0;
+
+hgage.style.display = "none"
 
 const seaso = new Audio('seasound.mp3');
 
@@ -35,7 +38,7 @@ function start() {
     sbut.style.animation = "byebut 4s";
     setTimeout(() => {
         sbut.style.display = "none";
-        sttext(stt);
+        sttext(stt);//버튼 스타트 지점
         }, 4000);
 }
 
@@ -81,11 +84,15 @@ function twobut(tw) {
         var twbtcho = document.querySelectorAll('.twbt')
         for (let i = 0;i < twbtcho.length; ++i) {
         twbtcho[i].classList.remove("animate__fadeIn");
+        twbtcho[i].style.setProperty('--animate-duration', '1s');
         twbtcho[i].classList.add("animate__animated");
         twbtcho[i].classList.add("animate__fadeOut");
-        //twbtcho[i].disabled = true;
+        twbtcho[i].disabled = true;
         }
         setTimeout(() => {
+            for (let i = 0;i < twbtcho.length; ++i) {
+                twbtcho[i].style.display = "none";
+            }
             stsec.style.paddingBottom = "30%";
             twbutnext(tw,twn)
         }, 2000);
@@ -194,8 +201,18 @@ function frtext(a) {
         ststr.classList.add("animate__fadeOut");
         setTimeout(() => {
             stsec.style.paddingBottom = "30%";
-            whaletxf(wht);//이벤트 발생 지점
+            ranev();//이벤트 발생 지점
         }, 1000);
     }
         }, 4000);
+}
+
+function ranev() {
+    var ran = Math.floor(Math.random() * 2);
+    if (ran === 0) {
+        mermatxf(mer);
+    }
+    if (ran === 1) {
+        whaletxf(wht);
+    }
 }

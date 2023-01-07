@@ -10,8 +10,39 @@
     margin-top: 60%;
     left: 35%;
     width: 30%;
-    border: 1px solid black;
+    border: solid black;
     padding-bottom: 30%;
     border-radius: 50%;
     animation: whsm 7s infinite;
+}
+.status{
+    text-align: center;
+    position: absolute;
+    padding: auto;
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+.heartfull {
+    animation: beath 3.5s infinite;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+}
+.heart {
+    animation: beath 3.5s infinite;
+    position: absolute;
+    width: 40%;
+    left: 30%;
+}
+.hbut {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    border-radius: 50%;
+    padding-bottom: 30%;
+    opacity: 0;
+}
+.hgage {
+    transition: 1.5s ease-in-out;
 }
