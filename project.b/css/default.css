@@ -25,3 +25,8 @@ h1 {
     font-weight: normal;
     font-style: normal;
 }
+@media (min-width: 500px) {
+    h1 {
+        display: none;
+    }
+}

@@ -98,3 +98,12 @@
     60% {transform: translateY(-34%) scaleY(-1) scale(1.3) rotate(13deg)}
     100% {transform: translateY(20%) translateX(-30%) scaleY(0.6) scale(1.3)}
 }
+@keyframes dlp1 {
+    0% {transform: rotate(0deg)} 
+    100% {transform: rotate(360deg)} 
+}
+@keyframes dlkill {
+    0% {transform: translateY(-50%) scaleX(-1)}
+    30% {transform: translateY(-300%) scaleX(-1)}
+    100% {transform: translateY(-50%) scaleX(-1)}
+}

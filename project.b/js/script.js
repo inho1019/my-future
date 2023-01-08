@@ -33,8 +33,13 @@ function vlup (a) {
     }
 }
 
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+
 function start() {
-    //sbut.disabled = true;
+    sbut.disabled = true;//주석으로 버튼 연타
     sbut.style.animation = "byebut 4s";
     setTimeout(() => {
         sbut.style.display = "none";
@@ -62,7 +67,7 @@ function sttext(a) {
         ststr.classList.add("animate__animated");
         ststr.classList.add("animate__fadeOut");
         setTimeout(() => {
-        stsec.style.paddingBottom = "35%";
+        stsec.style.paddingBottom = "45%";
             for (let i = 0;i < twbuttx.length; ++i) {
                 twobut(i);
             }
@@ -84,7 +89,7 @@ function twobut(tw) {
         var twbtcho = document.querySelectorAll('.twbt')
         for (let i = 0;i < twbtcho.length; ++i) {
         twbtcho[i].classList.remove("animate__fadeIn");
-        twbtcho[i].style.setProperty('--animate-duration', '1s');
+        twbtcho[i].style.setProperty('--animate-duration', '1.5s');
         twbtcho[i].classList.add("animate__animated");
         twbtcho[i].classList.add("animate__fadeOut");
         twbtcho[i].disabled = true;
@@ -93,7 +98,7 @@ function twobut(tw) {
             for (let i = 0;i < twbtcho.length; ++i) {
                 twbtcho[i].style.display = "none";
             }
-            stsec.style.paddingBottom = "30%";
+            stsec.style.paddingBottom = "40%";
             twbutnext(tw,twn)
         }, 2000);
     }, false);
@@ -117,7 +122,7 @@ function twbutnext(a,b) {
                 seaso.volume = 0;
                 vlup(seaso);
             } else {
-                stsec.style.paddingBottom = "50%";
+                stsec.style.paddingBottom = "60%";
                 star.classList.add("animate__animated");
                 star.classList.add("animate__fadeIn");
                 star.style.setProperty('--animate-duration', '2s');
@@ -161,7 +166,7 @@ function thrtext(a,b) {
         ststr.classList.add("animate__fadeOut");
         setTimeout(() => {
         if (b === 0) {
-                stsec.style.paddingBottom = "0%";
+                stsec.style.paddingBottom = "10%";
             } else {
                 stsec.style.paddingBottom = "60%";
             }
@@ -200,7 +205,7 @@ function frtext(a) {
         ststr.classList.add("animate__animated");
         ststr.classList.add("animate__fadeOut");
         setTimeout(() => {
-            stsec.style.paddingBottom = "30%";
+            stsec.style.paddingBottom = "40%";
             ranev();//이벤트 발생 지점
         }, 1000);
     }
@@ -208,11 +213,32 @@ function frtext(a) {
 }
 
 function ranev() {
-    var ran = Math.floor(Math.random() * 2);
-    if (ran === 0) {
-        mermatxf(mer);
-    }
-    if (ran === 1) {
-        whaletxf(wht);
-    }
+    setTimeout(() => {
+        var ran = Math.floor(Math.random() * 3);
+        if (ran === 0) {
+            mermatxf(mer);
+        }
+        if (ran === 1) {
+            whaletxf(wht);
+        }
+        if (ran === 2) {
+            dlphtxf(dlp);
+        }
+    }, 2000);
+}
+function passivef() {
+    var c = Math.floor(Math.random() * 3);
+    setTimeout(() => {
+    ststr.classList.remove("animate__fadeOut");
+    ststr.innerHTML = passive[c]; 
+    ststr.classList.add("animate__animated");
+    ststr.classList.add("animate__fadeIn");
+    ststr.style.setProperty('--animate-duration', '2s');
+    setTimeout(() => {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut"); 
+        ranev();
+                           }, 8000);
+    }, 2000);
 }

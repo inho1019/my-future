@@ -7,11 +7,7 @@ function init() {
     var style = ["style1", "style2", "style3", "style4"];
     var tam = ["tam1", "tam1", "tam1", "tam2", "tam3"];
     var opacity = ["opacity1", "opacity1", "opacity1", "opacity2", "opacity2", "opacity3"];
-
-    function getRandomArbitrary(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-    }
-
+    
     var estrela = "";
     var qtdeEstrelas = 300;
 
