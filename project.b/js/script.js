@@ -220,7 +220,7 @@ function frtext(a) {
 
 function ranev() {
     if (eventcount < 10) {
-    var ran = Math.floor(Math.random() * 6);
+    var ran = Math.floor(Math.random() * 7);
     for (let i = 0; i < event.length; ++i){
         if (ran === event[i]) {
             ranev();
@@ -250,6 +250,10 @@ function ranev() {
         if (ran === 5) {
             krakentxf(krk);
             event[eventcount] = 5;
+        }
+        if (ran === 6) {
+            sirentxf(sit);
+            event[eventcount] = 6;
         }
         eventcount += 1;
     }

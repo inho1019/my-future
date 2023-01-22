@@ -168,7 +168,8 @@
 }
 .sibo {
     position: absolute;
-    width: 6%; 
+    width: 7%; 
     padding-bottom: 13%;
     margin-top: 45%;
+    opacity: 0;
 }

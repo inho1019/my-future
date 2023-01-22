@@ -815,6 +815,7 @@ function krtxt(a) {
 //세이렌
 let sia = 0;
 let ksi = 0;
+let sit = 0;
 
 function mksiren () {
     var siren = document.createElement('img');
@@ -830,42 +831,136 @@ function mksiren () {
     }, 3000);
 }
 function sirenatt() {
+    var siren = document.querySelector(".siren");
     if (sia < 50) {
-    var siat = document.createElement('img');
-    var sibo = document.createElement('button')
-    siat.classList.add("siat")
-    var ran = Math.floor(Math.random() * 3);
-    siat.setAttribute("src", "img/note" + ran + ".png");
-    siat.classList.add("mx-auto")
-    stsec.appendChild(siat);
-    sia += 1;
-    setTimeout(() => { 
-        siat.style.left = getRandomArbitrary(35, 60) + "%";
-        siat.style.marginTop = "65%"
-    }, 100);
-    setTimeout(() => { 
-        sirenatt();
-    }, 500);
-    setTimeout(() => { 
-        sibo.classList.add("sibo")
-        stsec.appendChild(sibo);
-        sibo.style.left = siat.style.left
-        sibo.addEventListener("mouseover", function(){
-            siat.style.display = "none";
+        var siat = document.createElement('img');
+        var sibo = document.createElement('button')
+        siat.classList.add("siat")
+        var ran = Math.floor(Math.random() * 3);
+        siat.setAttribute("src", "img/note" + ran + ".png");
+        siat.classList.add("mx-auto")
+        stsec.appendChild(siat);
+        sia += 1;
+        setTimeout(() => { 
+            siat.style.left = getRandomArbitrary(35, 60) + "%";
+            siat.style.marginTop = "65%"
+        }, 100);
+        setTimeout(() => { 
+            sirenatt();
+        }, 500);
+        setTimeout(() => { 
+            sibo.classList.add("sibo")
+            stsec.appendChild(sibo);
+            sibo.style.left = siat.style.left
+            if (sibo.style.left > 52 + "%") {
+                sibo.style.transform = "rotate(-20deg)"
+            }
+            if (sibo.style.left < 42 + "%") {
+                sibo.style.transform = "rotate(20deg)"
+            }
+            sibo.addEventListener("mouseover", function(){
+                siat.style.display = "none";
+                sibo.style.display = "none";
+                ksi += 1;
+            }, false);
+            sibo.addEventListener("click", function(){
+                siat.style.display = "none";
+                sibo.style.display = "none";
+                ksi += 1;
+            }, false);
+        }, 1500);
+        setTimeout(() => { 
             sibo.style.display = "none";
-            ksi += 1;
-        }, false);
-        sibo.addEventListener("click", function(){
+        }, 2500);
+        setTimeout(() => { 
             siat.style.display = "none";
-            sibo.style.display = "none";
-            ksi += 1;
-        }, false);
-    }, 1500);
-    setTimeout(() => { 
-        sibo.style.display = "none";
-    }, 2500);
-    setTimeout(() => { 
-        siat.style.display = "none";
-    }, 3500);
+        }, 3500);
+    } else {
+        setTimeout(() => { 
+            siren.style.opacity = "0";
+            setTimeout(() => { 
+                siren.style.display = "none";
+                if (ksi < 30) {
+                    srtxt(sit);
+                } else {
+                    srtxs(sit);
+                }
+            }, 2000);
+    }, 3000);
     }
+}
+function srtxf(a) {
+    ststr.innerHTML = sirentxf[a]; 
+    ststr.classList.remove("animate__fadeOut");
+    ststr.classList.add("animate__animated");
+    ststr.classList.add("animate__fadeIn");
+    ststr.style.setProperty('--animate-duration', '2s');
+    sit += 1;
+    setTimeout(() => {
+    if (sit < sirentxf.length) {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+         setTimeout(() => { 
+             srtxf(sit);
+             ststr.classList.remove("animate__fadeOut");
+                           }, 2000);
+    } else {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+        mksiren();
+        sit = 0;
+    }
+        }, 4000);
+}
+function srtxs(a) {
+    ststr.innerHTML = sirentxs[a]; 
+    ststr.classList.remove("animate__fadeOut");
+    ststr.classList.add("animate__animated");
+    ststr.classList.add("animate__fadeIn");
+    ststr.style.setProperty('--animate-duration', '2s');
+    sit += 1;
+    setTimeout(() => {
+    if (sit < sirentxs.length) {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+         setTimeout(() => { 
+             srtxs(sit);
+             ststr.classList.remove("animate__fadeOut");
+                           }, 2000);
+    } else {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+        passivef();
+        sit = 0;
+    }
+        }, 4000);
+}
+function srtxt(a) {
+    ststr.innerHTML = sirentxt[a]; 
+    ststr.classList.remove("animate__fadeOut");
+    ststr.classList.add("animate__animated");
+    ststr.classList.add("animate__fadeIn");
+    ststr.style.setProperty('--animate-duration', '2s');
+    sit += 1;
+    setTimeout(() => {
+    if (sit < sirentxt.length) {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+         setTimeout(() => { 
+             srtxt(sit);
+             ststr.classList.remove("animate__fadeOut");
+                           }, 2000);
+    } else {
+        ststr.classList.remove("animate__fadeIn");
+        ststr.classList.add("animate__animated");
+        ststr.classList.add("animate__fadeOut");
+        passivef();
+        sit = 0;
+    }
+        }, 4000);
 }
