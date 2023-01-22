@@ -7,6 +7,8 @@ const boat = document.querySelector(".boat")
 const topsec = document.querySelector(".topsec")
 const hgage = document.querySelector(".hgage")
 
+let event = [21,21,21,21,21,21,21,21,21,21];
+let eventcount = 0;
 let stt = 0;
 let twn = 0;
 let tht = 0;
@@ -206,25 +208,51 @@ function frtext(a) {
         ststr.classList.add("animate__fadeOut");
         setTimeout(() => {
             stsec.style.paddingBottom = "40%";
+            setTimeout(() => {
+            var h1 = document.querySelector("h1")
+            h1.style.opacity = "0";
             ranev();//이벤트 발생 지점
+                }, 2000);
         }, 1000);
     }
         }, 4000);
 }
 
 function ranev() {
-    setTimeout(() => {
-        var ran = Math.floor(Math.random() * 3);
+    if (eventcount < 10) {
+    var ran = Math.floor(Math.random() * 6);
+    for (let i = 0; i < event.length; ++i){
+        if (ran === event[i]) {
+            ranev();
+            return
+        }
+    }
         if (ran === 0) {
             mermatxf(mer);
+            event[eventcount] = 0;
         }
         if (ran === 1) {
             whaletxf(wht);
+            event[eventcount] = 1;
         }
         if (ran === 2) {
             dlphtxf(dlp);
+            event[eventcount] = 2;
         }
-    }, 2000);
+        if (ran === 3) {
+            stonetxs(stn);
+            event[eventcount] = 3;
+        }
+        if (ran === 4) {
+            sharktxf(shk);
+            event[eventcount] = 4;
+        }
+        if (ran === 5) {
+            krakentxf(krk);
+            event[eventcount] = 5;
+        }
+        eventcount += 1;
+    }
 }
 function passivef() {
     var c = Math.floor(Math.random() * 3);
@@ -238,7 +266,9 @@ function passivef() {
         ststr.classList.remove("animate__fadeIn");
         ststr.classList.add("animate__animated");
         ststr.classList.add("animate__fadeOut"); 
-        ranev();
+        setTimeout(() => {
+            ranev();
+            }, 2000);
                            }, 8000);
-    }, 2000);
+    }, 3000);
 }

@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     animation-fill-mode: forwards;
     animation: fadein 5s, swingt 15s infinite;
+    transition: 1.5s ease-out;
     }
 .boat {
     position: relative;

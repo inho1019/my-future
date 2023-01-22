@@ -47,9 +47,9 @@
     transition: 1.5s ease-in-out;
 }
 .dlph {
-    position: relative;
+    position: absolute;
     width: 6%;
-    margin-bottom: -67%;
+    margin-top: 30%;
     transform-origin: 30% -150%;
     animation: dlp1 5s infinite;
 }
@@ -60,4 +60,115 @@
     opacity: 0;
     display: none;
     z-index: 2;
+}
+.stone {
+    position: relative;
+    margin-bottom: -45.5%;
+    opacity:  0.8;
+    display: none;
+    animation:  stonea 5s ;
+}
+.lbut {
+    position: absolute;
+    margin-top: -60%;
+    padding-bottom: 80%;
+    width: 50%;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.rbut {
+    position: absolute;
+    margin-top: -60%;
+    padding-bottom: 80%;
+    left: 50%;
+    width: 50%;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.cbut {
+    position: absolute;
+    margin-top: -10%;
+    padding-bottom: 30%;
+    left: 25%;
+    width: 50%;
+    z-index: 3;
+    opacity: 0;
+    display: none;
+}
+.shph {
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    margin-top: 16%; 
+    animation: fadein 3s, shan 8s infinite;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.shef {
+    position: absolute;
+    margin-top: 12%;
+    width: 8%;
+    transition: 1.5s ease-out;
+    animation: shatef 1s;
+}
+.shbut {
+    position: absolute;
+    margin-top: 16%;
+    padding-bottom: 5%;
+    left: 30%;
+    width: 40%;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.sailbut {
+    position: absolute;
+    margin-top: 2%;
+    padding-bottom: 14%;
+    left: 42.5%;
+    width: 15%;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.krphf {
+    position: absolute;
+    width: 10%; 
+    animation: krans 8s; 
+}
+.krphs {
+    position: absolute;
+    width: 10%; 
+    animation: kranf 8s; 
+}
+.krbut {
+    position: absolute;
+    width: 10%; 
+    margin-top: 2%;
+    padding-bottom: 15%;
+    opacity: 0;
+    z-index: 2;
+}
+.siren {
+    position: absolute;
+    width: 35%; 
+    left: 32.5%;
+    opacity: 0;
+    transition: 2s ease-out;
+}
+.siat {
+    position: absolute;
+    margin-top: 7%;
+    width: 5%; 
+    left: 47.5%;
+    transition: 3.5s ease-out;
+    animation: swing 1s infinite;
+}
+.sibo {
+    position: absolute;
+    width: 6%; 
+    padding-bottom: 13%;
+    margin-top: 45%;
 }

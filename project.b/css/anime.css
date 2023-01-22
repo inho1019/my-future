@@ -107,3 +107,63 @@
     30% {transform: translateY(-300%) scaleX(-1)}
     100% {transform: translateY(-50%) scaleX(-1)}
 }
+@keyframes stonea {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+@keyframes stoneb {
+     0% {transform: translateX(0%) }
+    50% {transform: translateX(-70%) }
+    100% {opacity: 0;}
+}
+@keyframes stonec {
+     0% {transform: translateX(0%) }
+    50% {transform: translateX(70%) }
+    100% {opacity: 0;}
+}
+@keyframes stoned {
+    0% { transform: scale( 1 )}
+    15% { transform: scale( 1.5 )}
+    85% { transform: scale( 1.5 )}
+    100% { transform: scale( 1 )}
+}
+@keyframes shan {
+    0% {transform: translateX(-100%) scaleX(-1)}
+    45% {transform: translateX(100%) scaleX(-1)}
+    50% {transform: translateX(100%) }
+    95% {transform: translateX(-100%) }
+    100% {transform: translateX(-100%) }
+}
+@keyframes shmv {
+    0% {transform:  scaleX(-1)}
+    100% {transform: translateX(-300%) scaleX(-1)}
+}
+@keyframes shat {
+    0% {transform: translateX(-60%) scaleX(-1) scale( 1.5 )}
+    45% {transform: translateX(60%) scaleX(-1) scale( 1.5 )}
+    50% {transform: translateX(60%) scale( 1.5 )}
+    95% {transform: translateX(-60%) scale( 1.5 )}
+    100% {transform: translateX(-60%) scale( 1.5 )}
+}
+@keyframes shatef {
+    from {
+        transform: scale(0.5)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+@keyframes kranf {
+    0% {transform: translateY(100%) scaleX(0)}
+    30% {transform: translateY(0) scaleX(-1) rotate(-30deg)}
+    100% {transform: translateY(100%) scaleX(0)}
+}
+@keyframes krans {
+    0% {transform: translateY(100%) scaleX(0)}
+    30% {transform: translateY(0) scaleX(1) rotate(-30deg)}
+    100% {transform: translateY(100%) scaleX(0)}
+}
